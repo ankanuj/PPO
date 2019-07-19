@@ -1,0 +1,83 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}| Home {% endblock %}
+{% block content %}
+<section >
+	<div class="jumbotron">
+		<div class="container">
+  <div id="demo" class="carousel  text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     
+    <div class="carousel-inner" >
+    	{% for photo in photo %}	
+    	<div class="carousel-item active">
+    				
+		<a href="{{ photo.img_1.url }}" data-lightbox="home-images">
+			<img src="{{ photo.img_1.url }}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{{ photo.img_2.url }}" data-lightbox="home-images">
+			<img src="{{ photo.img_2.url }}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{{ photo.img_3.url }}" data-lightbox="home-images">
+			<img src="{{ photo.img_3.url }}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+</div>
+
+<section id="work" class=" text-center pt-md-5">
+	<div class="container " >
+	<div class="row text-center pt-md-2 pb-md-2">
+		<div class="col-md-4   pl-md-4 rounded-circle" >
+			<i class="fas fa-comment fa-4x mr-4"></i>
+			<hr >
+			<h3 ><a href="{%url 'ecopolicy'%}" >Economic Ploicies</a> </h3>
+			<p><b>Economic Policy provides timely and authoritative analyses of the choices confronting policymakers. The subject matter ranges from the study of how individual markets can and should work to the broadest interactions ...</b></p>
+		</div>
+		<div class="col-md-4  px-md-4 rounded-circle" >
+			<i class="fas fa-comment fa-4x mr-4"></i>
+			<hr>
+			<h3><a href="{%url 'publicwelfare'%} ">Public Polices</a></h3>
+			<p><b>Welfare policies help those in economic need. These programs are also known as public assistance. The basic method of distributing public assistance funds is via income transfer: The government takes money from wealthier citizens through taxes, then gives some of that money to citizens with low or no income.</b></p>
+		</div>
+		<div class="col-md-4  pr-md-4 rounded-circle" >
+			<i class="fas fa-comment fa-4x mr-4" class="text-white "></i>
+			<hr>
+			<h3><a href="#">Projects</a></h3>
+			<p><b>Economic Policy provides timely and authoritative analyses of the choices confronting policymakers. The subject matter ranges from the study of how individual markets can and should work to the broadest interactions ...</b></p>
+		</div>
+</div>
+</section>
+<br>
+
+</div>
+
+</section>
+{% endblock %} 

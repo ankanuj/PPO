@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Public Welfare {% endblock %}
+{% block content %}
+
+<section>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-9">
+				<img src="{% static 'img/public.gif'%}">
+			</div>
+			<div class="col-md-3 bg-dark pt-md-5">
+				<div class="card  text-center ">
+					
+					<h5 class="card-title"> Public Welfare in India</h5>
+					<hr>
+					<div class="card-body">
+					<p class="card-text text-justify"><b>The Central Government of India welfare expenditures are a substantial portion of the official budget, and state and local governments play roles in developing and implementing welfare policies.</b></p>
+				</div>
+			</div>
+			</div>
+	</div>
+</div>
+</section>
+
+
+<div class="jumbotron">
+  <div id="demo" class="carousel  text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     
+    <div class="carousel-inner" >
+
+    	<div class="carousel-item active">
+    				
+		<a href="{%static 'img/modiji.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/modiji.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/manmohan.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/manmohan.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/apj.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/apj.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+
+	</div>
+<!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+</div>
+
+
+<!--Schemas-->
+<section>
+	<div class="jumbotron">
+		<div class="row sildeanim bg-dark" >
+			<div class="col-md-3 pt-md-3 pb-md-4">
+				<div class="card text-center ">
+					<h5 class="card-title "> Public Welfare Schemes</h5>
+					<hr>
+					<div class="card-body">
+					<ul class="text-justify">
+						<li class="card-text "><a href="{% url 'PMJDY' %}">  Pradhan Mantri Jan Dhan Yojana (PMJDY)</a></li>
+						<li class="card-text"><a href="{% url 'jansuraksha' %}">From Jan Dhan to Jan Suraksha</a></li>
+						<li class="card-text"><a href="{% url 'pmjjby' %}">Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)</a></li>
+						<li class="card-text"><a href="{% url 'pmsby' %}">Pradhan Mantri Suraksha Bima Yojana (PMSBY)</a></li>
+						<li class="card-text"><a href="{% url 'apy' %}">Atal Pension Yojana (APY)</a></li>
+						<li class="card-text"><a href="{% url 'myj' %}">Pradhan Mantri Mudra Yojana.</a></li>
+						<li class="card-text"><a href="{% url 'suis' %}">Stand Up India Scheme.</a></li><br>
+						<li class="card-text"><a href="{% url 'pmvvyj' %}">Pradhan Mantri Vaya Vandana Yojana.</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 pt-md-3 pb-md-2" id="pmjdy">
+				<div class="card  " >
+					<div class="card-body " >
+						<h3 class="card-title">Pradhan Mantri Jan Dhan Yojana (PMJDY)</h3>
+						<p class="card-text pre-scrollable">
+						Hon’ble Prime Minister announced Pradhan Mantri Jan Dhan Yojana as the National Mission on Financial Inclusion in his Independence Day address on 15th August 2014, to ensure comprehensive financial inclusion of all the households in the country by providing universal access to banking facilities with at least one basic bank account to every household, financial literacy, access to credit, insurance and pension facility. Under this, a person not having a savings account can open an account without the requirement of any minimum balance and, in case they self-certify that they do not have any of the officially valid documents required for opening a savings account, they may open a small account. Further, to expand the reach of banking services, all of over 6 lakh villages in the country were mapped into 1.59 lakh Sub Service Areas (SSAs), with each SSA typically comprising of 1,000 to 1,500 households, and in the 1.26 lakh SSAs that did not have a bank branch, Bank Mitras were deployed for branchless banking.<br>
+						Thus, PMJDY offers unbanked persons easy access to banking services and awareness about financial products through financial literacy programmes. In addition, they receive a RuPay debit card, with inbuilt accident insurance cover of Rs. 1 lakh, and access to overdraft facility upon satisfactory operation of account or credit history of six months. Further, through Prime Minister’s Social Security Schemes, launched by the Hon’ble Prime Minister on 9th May 2015, all eligible account holders can access through their bank accounts personal accident insurance cover under Pradhan Mantri Suraksha Bima Yojana, life insurance cover under Pradhan Mantri Jeevan Jyoti Bima Yojana, and guaranteed minimum pension to subscribers under Atal Pension Yojana.
+						<br>
+						PMJDY was conceived as a bold, innovative and ambitious mission. Census 2011 estimated that out of 24.67 crore households in the country, 14.48 crore (58.7%) had access to banking services. In the first phase of the scheme, these households were targeted for inclusion through opening of a bank account within a year of launch of the scheme. The actual achievement, by 26th January 2015, was 12.55 crore. As on 29.3.2017, the number of accounts has grown to 28.17 crore. Further, in 2011, only 0.33 lakh SSAs had banking facility and through provision of Bank Mitras in 1.26 lakh branchless SSAs, banking services were extended throughout rural India. The inclusive aspect of this is evident from the fact that 16.87 crore (60%) of PMJDY accounts are in rural areas and 14.49 crore (over 51%) PMJDY account holders are women.
+						<br>
+						The deposit base of PMJDY accounts has expanded over time. As on 29.3.2017, the deposit balance in PMJDY accounts was Rs. 62,972 crore. The average deposit per account has more than doubled from Rs. 1,064 in March 2015 to Rs. 2,235 in March 2017.
+						<br>
+						The Bank Mitra network has also gained in strength and usage. The average number of transactions per Bank Mitra, on the Aadhaar Enabled Payment System operated by Bank Mitras, has risen by over eightyfold, from 52 transactions in 2014-15 to 4,291 transactions in 2016-17.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

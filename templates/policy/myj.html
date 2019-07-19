@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Public Welfare {% endblock %}
+{% block content %}
+
+<section>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-9">
+				<img src="{% static 'img/public.gif'%}">
+			</div>
+			<div class="col-md-3 bg-dark pt-md-5">
+				<div class="card text-center ">
+					
+					<h5 class="card-title"> Public Welfare in India</h5>
+					<hr>
+					<div class="card-body">
+					<p class="card-text text-justify"><b>The Central Government of India welfare expenditures are a substantial portion of the official budget, and state and local governments play roles in developing and implementing welfare policies.</b></p>
+				</div>
+			</div>
+			</div>
+	</div>
+</div>
+</section>
+
+
+<div class="jumbotron">
+  <div id="demo" class="carousel  text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     
+    <div class="carousel-inner" >
+
+    	<div class="carousel-item active">
+    				
+		<a href="{%static 'img/modiji.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/modiji.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/manmohan.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/manmohan.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/apj.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/apj.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+
+	</div>
+<!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+</div>
+
+
+<!--Schemas-->
+<section>
+	<div class="jumbotron">
+		<div class="row sildeanim bg-dark" >
+			<div class="col-md-3 pt-md-3 pb-md-4">
+				<div class="card text-center ">
+					<h5 class="card-title "> Public Welfare Schemes</h5>
+					<hr>
+					<div class="card-body">
+					<ul class="text-justify">
+						<li class="card-text "><a href="{% url 'PMJDY' %}">  Pradhan Mantri Jan Dhan Yojana (PMJDY)</a></li>
+						<li class="card-text"><a href="{% url 'jansuraksha' %}">From Jan Dhan to Jan Suraksha</a></li>
+						<li class="card-text"><a href="{% url 'pmjjby' %}">Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)</a></li>
+						<li class="card-text"><a href="{% url 'pmsby' %}">Pradhan Mantri Suraksha Bima Yojana (PMSBY)</a></li>
+						<li class="card-text"><a href="{% url 'apy' %}">Atal Pension Yojana (APY)</a></li>
+						<li class="card-text"><a href="{% url 'myj' %}">Pradhan Mantri Mudra Yojana.</a></li>
+						<li class="card-text"><a href="{% url 'suis' %}">Stand Up India Scheme.</a></li><br>
+						<li class="card-text"><a href="{% url 'pmvvyj' %}">Pradhan Mantri Vaya Vandana Yojana.</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 pt-md-3 pb-md-2">
+				<div class="card ">
+					<div class="card-body" >
+						<h3 class="card-title">	Pradhan Mantri Mudra Yojana</h3>
+						<p class="card-text">
+
+						The scheme was launched on 8th April 2015. Under the scheme a loan of upto Rs. 50,000 is given under sub-scheme ‘Shishu’; between Rs. 50,000 to 5.0 Lakhs under sub-scheme ‘Kishore’; and between 5.0 Lakhs to 10.0 Lakhs under sub-scheme ‘Tarun’. Loans taken do not require collaterals. These measures are aimed at increasing the confidence of young, educated or skilled workers who would now be able to aspire to become first generation entrepreneurs; existing small businesses, too, will be able to expand their activates. As on 31.03.2017, Rs. 1,80,528.54 crores sanctioned (Rs. 85,100.74 cr. - Shishu, Rs. 53,545.14 cr. Kishore and Rs. 41,882.66 cr. - Tarun category), in 3,97,01,047 accounts.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

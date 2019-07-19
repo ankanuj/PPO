@@ -1,0 +1,116 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}| Public Welfare {% endblock %}
+{% block content %}
+
+<section>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-9">
+				<img src="{% static 'img/public.gif'%}">
+			</div>
+			<div class="col-md-3 bg-dark pt-md-5">
+				<div class="card text-center ">
+					
+					<h5 class="card-title"> Public Welfare in India</h5>
+					<hr>
+					<div class="card-body">
+					<p class="card-text text-justify"><b>The Central Government of India welfare expenditures are a substantial portion of the official budget, and state and local governments play roles in developing and implementing welfare policies.</b></p>
+				</div>
+			</div>
+			</div>
+	</div>
+</div>
+</section>
+
+
+<div class="jumbotron">
+  <div id="demo" class="carousel  text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     
+    <div class="carousel-inner" >
+
+    	<div class="carousel-item active">
+    				
+		<a href="{%static 'img/modiji.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/modiji.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/manmohan.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/manmohan.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/apj.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/apj.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+
+	</div>
+<!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+</div>
+
+
+<!--Schemas-->
+<section>
+	<div class="jumbotron">
+		<div class="row sildeanim bg-dark" >
+			<div class="col-md-3 pt-md-3 pb-md-4 ">
+				<div class="card  text-center ">
+					<h5 class="card-title "> Public Welfare Schemes</h5>
+					<hr>
+					<div class="card-body">
+					<ul class="text-justify">
+						<li class="card-text "><a href="{% url 'PMJDY' %}">  Pradhan Mantri Jan Dhan Yojana (PMJDY)</a></li>
+						<li class="card-text"><a href="{% url 'jansuraksha' %}">From Jan Dhan to Jan Suraksha</a></li>
+						<li class="card-text"><a href="{% url 'pmjjby' %}">Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)</a></li>
+						<li class="card-text"><a href="{% url 'pmsby' %}">Pradhan Mantri Suraksha Bima Yojana (PMSBY)</a></li>
+						<li class="card-text"><a href="{% url 'apy' %}">Atal Pension Yojana (APY)</a></li>
+						<li class="card-text"><a href="{% url 'myj' %}">Pradhan Mantri Mudra Yojana.</a></li>
+						<li class="card-text"><a href="{% url 'suis' %}">Stand Up India Scheme.</a></li><br>
+						<li class="card-text"><a href="{% url 'pmvvyj' %}">Pradhan Mantri Vaya Vandana Yojana.</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-9 pt-md-3 pb-md-2">
+				<div class="card ">
+					<div class="card-body" >
+						
+						<h3 class="display-4" > Eradication of Poverty, Social Welfare Policies in India: Initiatives and Policy Implications</h3>
+						<p class="card-text">India is essentially a nation of villages. It is predominantly an agricultural country where about 70 percent of the people are dependent upon land for their livelihood and 75 per cent live in rural India. Indian villages are suffering from economic distress due to the lower per capita income, illiteracy and wide spread malnutrition and under nutrition. They also suffer from the absence of basic amenities such as better housing facilities, transportation and communication services. In view of the recommendations of the commission appointed from time to time in accordance to the policies and programmes implemented from government and other agencies for socio-economic development of rural people the paper explores government initiatives, implications and explores the connotations of development of rural people. Further, the manuscript seeks to examine, explores the poverty in India with special interest with rural population and evaluation of the programmes and policies and implementation of social welfare programmes particularly. for more <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2385608"> Click here. </p>
+					
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+</section>
+
+{% endblock %} 

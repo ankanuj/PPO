@@ -1,0 +1,103 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}| About us {% endblock %}
+{% block content %}
+
+<div class="jumbotron text-center ">
+<h2> Some great thoughts</h2>
+  <div id="demo" class="carousel slide text-center" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" >
+    	<div class="carousel-item active">
+        <h4> "Little else is requisite to carry a state to the highest degree of opulence from the lowest barbarism but peace, 
+        <br>easy taxes, and a tolerable administration of justice."<br><span>Adam Smith</span></h4>
+      </div>
+      <div class="carousel-item">
+         <h4> "There is one rule for the industrialist and that is: make the best quality goods possible at the lowest cost possible,
+        <br> paying the highest wages possible."<br><span>Henry Ford</span></h4>
+      </div>
+      <div class="carousel-item ">
+         <h4>"We know that advanced economies with stable governments that borrow in their own currency are capable of 
+          <br>running up very high levels of debt without crisis."<br><span>Paul Krugman</span></h4>
+      </div>
+      </div>
+</div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+</div>
+</div>
+
+
+<div class="container-fluid pt-md-2">
+	<div class="row">
+		{% for img in img %}
+		<div class="col-md-9">
+		<a href="{{ img.img_2.url }}" data-lightbox="home-images">
+			<img src="{{ img.img_2.url }}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+	</div>
+	{% endfor %}
+	
+		<div class="col-md-3 bg-secondary pt-md-5">
+			<div class="card">
+				<div class="card-body text-center">
+					<h3 >What we do</h3>
+					<p class="card-text" ><b>We welcome you all to work with us ,our organisation is open for all.We all work as family here and research on welfare and other polices which could be good or bad .Then finally we make a report of all our research in a year and came to the concludion and then tell you all.</b></p>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+<br>
+
+
+<section id="work" class="bg-dark text-white text-center pb-md-2">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <hr>
+    <a href="#" class="btn btn-secondary text-white btn-lg">View Our Featured Projects</a>
+  </section>
+
+<section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <hr>
+      <div class="row text-center">
+        {% if photo %}
+
+          {% for photo in photo %}
+        <div class="col-md-4"> 
+          <img src="{{ photo.photo_main.url}}" alt="" class="rounded-circle mb-3">
+          <h4>{{photo.first_name }}</h4>
+          <p class="text-success">
+            <i class="fas fa-award text-success mb-3"></i> Worker</p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> {{photo.phone }}</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> {{photo.email }}</p>
+        </div>
+          {% endfor %}
+        {% endif %}
+        
+        
+      </div>
+    </div>
+  </section>
+{% endblock %} 

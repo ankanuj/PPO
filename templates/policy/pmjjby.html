@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}| Public Welfare {% endblock %}
+{% block content %}
+
+<section>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-9">
+				<img src="{% static 'img/public.gif'%}">
+			</div>
+			<div class="col-md-3 bg-dark pt-md-5">
+				<div class="card text-center ">
+					
+					<h5 class="card-title"> Public Welfare in India</h5>
+					<hr>
+					<div class="card-body">
+					<p class="card-text text-justify"><b>The Central Government of India welfare expenditures are a substantial portion of the official budget, and state and local governments play roles in developing and implementing welfare policies.</b></p>
+				</div>
+			</div>
+			</div>
+	</div>
+</div>
+</section>
+
+
+<div class="jumbotron">
+  <div id="demo" class="carousel  text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     
+    <div class="carousel-inner" >
+
+    	<div class="carousel-item active">
+    				
+		<a href="{%static 'img/modiji.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/modiji.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/manmohan.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/manmohan.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+    <div class="carousel-item ">
+    				
+		<a href="{%static 'img/apj.jpg' %}" data-lightbox="home-images">
+			<img src="{%static 'img/apj.jpg' %}" style="height: 400px;" class="img-fluid " alt="">
+		</a>
+		
+    </div>
+
+	</div>
+<!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo"  data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+</div>
+
+
+<!--Schemas-->
+<section>
+	<div class="jumbotron">
+		<div class="row sildeanim bg-dark" >
+			<div class="col-md-3 pt-md-3 pb-md-4">
+				<div class="card text-center ">
+					<h5 class="card-title "> Public Welfare Schemes</h5>
+					<hr>
+					<div class="card-body">
+					<ul class="text-justify">
+						<li class="card-text "><a href="{% url 'PMJDY' %}">  Pradhan Mantri Jan Dhan Yojana (PMJDY)</a></li>
+						<li class="card-text"><a href="{% url 'jansuraksha' %}">From Jan Dhan to Jan Suraksha</a></li>
+						<li class="card-text"><a href="{% url 'pmjjby' %}">Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)</a></li>
+						<li class="card-text"><a href="{% url 'pmsby' %}">Pradhan Mantri Suraksha Bima Yojana (PMSBY)</a></li>
+						<li class="card-text"><a href="{% url 'apy' %}">Atal Pension Yojana (APY)</a></li>
+						<li class="card-text"><a href="{% url 'myj' %}">Pradhan Mantri Mudra Yojana.</a></li>
+						<li class="card-text"><a href="{% url 'suis' %}">Stand Up India Scheme.</a></li><br>
+						<li class="card-text"><a href="{% url 'pmvvyj' %}">Pradhan Mantri Vaya Vandana Yojana.</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 pt-md-3 pb-md-2">
+				<div class="card ">
+					<div class="card-body" >
+						<h3 class="card-title">	Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)</h3>
+						<p class="card-text">
+
+						The PMJJBY is available to people in the age group of 18 to 50 years having a bank account who give their consent to join / enable auto-debit. Aadhar is the primary KYC for the bank account. The life cover of Rs. 2 lakh is for the one year period stretching from 1st June to 31st May and is renewable. Risk coverage under this scheme is for Rs. 2 lakh in case of death of the insured, due to any reason. The premium is Rs. 330 per annum which is to be auto-debited in one installment from the subscriber’s bank account as per the option given by him on or before 31st May of each annual coverage period under the scheme. The scheme is being offered by the Life Insurance Corporation and all other life insurers who are willing to offer the product on similar terms with necessary approvals and tie up with banks for this purpose. As on 31st March, 2017, cumulative gross enrollment reported by banks subject to verification of eligibility, etc. is over 3.10 crore under PMJJBY. A total of 62166 claims were registered under PMJJBY of which 59118 have been disbursed.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
